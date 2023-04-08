@@ -11,7 +11,7 @@ const lookup = {
 };
 
 function rot13(encodedStr){
-   let decodedArr = []; // Your Result goes here
+   // let decodedArr = []; // Your Result goes here
   // Only change code below this line
 	let ind = 0;
 	let str = "";
@@ -23,12 +23,12 @@ function rot13(encodedStr){
 			str += encodedStr.charAt(i);
 		}
 	}
-	decodedArr[ind++]=str;
-  return decodedArr;//return decodedArr
+	// decodedArr[ind++]=str;
+  return str;//return decodedArr
 }
 
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
-// console.log(rot13("SERR YBIR? NPPVBWBO"));
+console.log(rot13("SERR YBIR? NPPVBWBO"));
 
 module.exports = rot13;
